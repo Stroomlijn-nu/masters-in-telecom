@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tjimka.github.io/masters-in-telecom-home/esim/</loc>
-    <lastmod>2026-05-31T09:43:30.478Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://tjimka.github.io/masters-in-telecom-home/outdoor-data/</loc>
-    <lastmod>2026-05-31T09:42:24.398Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://tjimka.github.io/masters-in-telecom-home/mobiele-scanning/</loc>
-    <lastmod>2026-05-31T09:41:14.110Z</lastmod>
+    <loc>https://tjimka.github.io/masters-in-telecom-home/</loc>
+    <lastmod>2026-05-31T10:24:51.827Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://tjimka.github.io/masters-in-telecom-home/mobiele-beveiliging/</loc>
-    <lastmod>2026-05-31T09:40:43.722Z</lastmod>
+    <lastmod>2026-05-31T10:24:27.590Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://tjimka.github.io/masters-in-telecom-home/outdoor-data/</loc>
+    <lastmod>2026-05-31T10:24:26.001Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://tjimka.github.io/masters-in-telecom-home/mobiele-telefonie/</loc>
-    <lastmod>2026-05-31T09:39:20.907Z</lastmod>
+    <lastmod>2026-05-31T10:23:54.688Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://tjimka.github.io/masters-in-telecom-home/</loc>
-    <lastmod>2026-05-31T09:38:13.037Z</lastmod>
+    <loc>https://tjimka.github.io/masters-in-telecom-home/esim/</loc>
+    <lastmod>2026-05-31T10:23:20.702Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://tjimka.github.io/masters-in-telecom-home/mobiele-scanning/</loc>
+    <lastmod>2026-05-31T10:21:13.186Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
