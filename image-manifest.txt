@@ -1,0 +1,17 @@
+Masters in Telecom — afbeeldingen-overzicht
+============================================
+Bestandsnaam in assets/                       Huidige live URL (10web)
+--------------------------------------------  ----------------------------------------------------------------------
+highspeed-fwa-infographic.png                 (nieuw, zit al in deze map — Outdoor data infographic)
+2025-LOGO-DELIVERY-MIT512-marge.png           .../2026/04/2025-LOGO-DELIVERY-MIT512-marge.png      (favicon + footerlogo)
+2025-LOGO-DELIVERY-MIT512X128-kopie.png       .../2026/05/2025-LOGO-DELIVERY-MIT512X128-kopie.png  (headerlogo)
+Mobiele-scanning-zw-met-filter.png            .../2026/04/Mobiele-scanning-zw-met-filter.png
+Mobiele-telefonie.png                         .../2026/05/Mobiele-telefonie.png
+VoIP-zw-met-filter.png                        .../2026/04/VoIP-zw-met-filter.png
+Glasvezel-zw-met-filter.png                   .../2026/04/Glasvezel-zw-met-filter.png  (gebruikt voor Outdoor data-kaart)
+eSIM-zw-met-filter.png                        .../2026/04/eSIM-zw-met-filter.png
+LOGO-KPN-1.png                                .../2026/04/LOGO-KPN-1.png
+LOGO-ODIDO-1.png                              .../2026/04/LOGO-ODIDO-1.png
+LOGO-VODAFONE-1.png                           .../2026/04/LOGO-VODAFONE-1.png
+
+Basis-URL: https://regular-wombat.10web.cloud/wp-content/uploads
