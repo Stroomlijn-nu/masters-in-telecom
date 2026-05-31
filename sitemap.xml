@@ -1,8 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/voip/</loc>
-    <lastmod>2026-05-31T14:41:18.704Z</lastmod>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/esim/</loc>
+    <lastmod>2026-05-31T14:42:16.402Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/outdoor-data/</loc>
+    <lastmod>2026-05-31T14:40:32.073Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/mobiele-telefonie/</loc>
+    <lastmod>2026-05-31T14:39:19.379Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/mobiele-scanning/</loc>
+    <lastmod>2026-05-31T14:38:46.358Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/mobiele-beveiliging/</loc>
+    <lastmod>2026-05-31T14:38:06.355Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/</loc>
+    <lastmod>2026-05-31T14:36:51.195Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/blog/mobiele-computers-en-scanners-van-newland/</loc>
+    <lastmod>2026-05-31T14:16:20.537Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/blog/samsung-galaxy-tab-a11-plus-ook-voor-accessoires-bij-masters-in-telecom/</loc>
+    <lastmod>2026-05-31T14:15:02.823Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/blog/wat-doe-je-als-er-geen-glasvezel-beschikbaar-is/</loc>
+    <lastmod>2026-05-31T14:13:46.151Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/blog/samsung-knox-wat-het-is-en-waarom-het-voor-jou-telt/</loc>
+    <lastmod>2026-05-31T14:12:29.193Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/blog/</loc>
+    <lastmod>2026-05-31T14:10:58.018Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
