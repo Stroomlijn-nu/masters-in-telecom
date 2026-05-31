@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/outdoor-data/</loc>
+    <lastmod>2026-05-31T15:06:36.824Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn-nu.github.io/masters-in-telecom/voip/</loc>
     <lastmod>2026-05-31T15:06:06.756Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -28,11 +33,6 @@
   <url>
     <loc>https://stroomlijn-nu.github.io/masters-in-telecom/esim/</loc>
     <lastmod>2026-05-31T14:42:16.402Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/outdoor-data/</loc>
-    <lastmod>2026-05-31T14:40:32.073Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
