@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/mobiele-beveiliging/</loc>
+    <lastmod>2026-05-31T12:19:39.064Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn-nu.github.io/masters-in-telecom/mobiele-telefonie/</loc>
     <lastmod>2026-05-31T12:19:25.295Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -13,11 +18,6 @@
   <url>
     <loc>https://stroomlijn-nu.github.io/masters-in-telecom/esim/</loc>
     <lastmod>2026-05-31T12:15:46.299Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/mobiele-beveiliging/</loc>
-    <lastmod>2026-05-31T10:42:28.285Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
