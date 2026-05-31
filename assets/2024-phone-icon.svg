@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laag_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0 {
+        stroke: url(#Naamloos_verloop_101);
+      }
+
+      .st0, .st1 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 5.7px;
+      }
+
+      .st1 {
+        stroke: url(#Naamloos_verloop_10);
+      }
+    </style>
+    <linearGradient id="Naamloos_verloop_10" data-name="Naamloos verloop 10" x1="33.3" y1="63.7" x2="95.7" y2="63.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#951b81"/>
+      <stop offset="1" stop-color="#d60b52"/>
+    </linearGradient>
+    <linearGradient id="Naamloos_verloop_101" data-name="Naamloos verloop 10" x1="56" y1="89.2" x2="73" y2="89.2" xlink:href="#Naamloos_verloop_10"/>
+  </defs>
+  <path class="st1" d="M64.5,94.9v14.2-2.8s-22.7,0-22.7,0c-3.1,0-5.7-2.5-5.7-5.7V26.9c0-3.1,2.5-5.7,5.7-5.7h45.4c3.1,0,5.7,2.5,5.7,5.7v73.7c0,3.1-2.5,5.7-5.7,5.7h-11.3"/>
+  <circle class="st0" cx="64.5" cy="89.2" r="5.7"/>
+</svg>
