@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/masters-in-telecom/blog/">
+<!-- BASE:END -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/masters-in-telecom/assets/2025-LOGO-DELIVERY-MIT512-marge.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+
+
+<link rel="stylesheet" href="/masters-in-telecom/styles.css">
+
+
+
+<!-- SEO Meta Tags -->
+<title>Inzichten &amp;amp; Innovatie | Masters in Telecom</title>
+<meta name="description" content="Inzichten over zakelijke telecom: mobiele beveiliging, mobiele scanning, abonnementen, glasvezel en 5G. Concreet uitgelegd door Masters in Telecom." />
+<meta property="og:title" content="Inzichten &amp;amp; Innovatie | Masters in Telecom" />
+<meta property="og:description" content="Inzichten over zakelijke telecom: mobiele beveiliging, mobiele scanning, abonnementen, glasvezel en 5G. Concreet uitgelegd door Masters in Telecom." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Inzichten &amp;amp; Innovatie | Masters in Telecom" />
+<meta name="twitter:description" content="Inzichten over zakelijke telecom: mobiele beveiliging, mobiele scanning, abonnementen, glasvezel en 5G. Concreet uitgelegd door Masters in Telecom." />
+<!-- End SEO Meta Tags -->
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://app.stroomlijn.nu/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=4458');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='kUbMDgcv';
+  var apiBase='https://app.stroomlijn.nu';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="ubar" data-section="ubar"><div class="wrap-wide">
+  <a href="tel:+31651700999"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+31 6 51 70 09 99</a>
+  <a href="mailto:dennis@mastersintelecom.nl"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>dennis@mastersintelecom.nl</a>
+  <span class="sep">Onafhankelijk via KPN, Odido en Vodafone</span>
+</div></div>
+
+<header class="hdr" id="hdr" data-section="navbar">
+  <div class="wrap-wide">
+    <div class="hdr-in">
+      <a href="/masters-in-telecom/" class="hdr-logo"><img src="/masters-in-telecom/assets/2025-LOGO-DELIVERY-MIT512X128-kopie.png" alt="Masters in Telecom"></a>
+      <nav class="nav">
+        <a href="/masters-in-telecom/">Home</a>
+        <div class="has-sub"><span>Diensten <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></span>
+          <div class="submenu">
+            <a href="/masters-in-telecom/mobiele-beveiliging/">Mobiele beveiliging</a>
+            <a href="/masters-in-telecom/mobiele-scanning/">Mobiele scanning</a>
+            <a href="/masters-in-telecom/mobiele-telefonie/">Mobiele telefonie</a>
+            <a href="/masters-in-telecom/voip/">VoIP</a>
+            <a href="/masters-in-telecom/outdoor-data/">Outdoor data</a>
+          </div>
+        </div>
+        <a href="/masters-in-telecom/blog/" class="active">Blog</a>
+        <a href="/masters-in-telecom/#waarom">Over ons</a>
+        <a href="/masters-in-telecom/#contact">Contact</a>
+      </nav>
+      <div class="hdr-right">
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/denniskruithof/" aria-label="LinkedIn"><svg class="ico" style="width:22px;height:22px" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.3 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3-2.01 0-2.32 1.57-2.32 3.2V21H9z"/></svg></a>
+          <a href="https://www.facebook.com/dennis.kruithof.50" aria-label="Facebook"><svg class="ico" style="width:22px;height:22px" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V8.9c0-.9.25-1.5 1.55-1.5h1.65V4.6c-.8-.1-1.6-.15-2.4-.15-2.4 0-4.05 1.45-4.05 4.15v2.3H7.5V14h2.75v8z"/></svg></a>
+          <a href="https://www.instagram.com/dennis.kruithof.50/" aria-label="Instagram"><svg class="ico" style="width:22px;height:22px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+        <a class="btn btn-primary" href="mailto:dennis@mastersintelecom.nl">Advies aanvragen</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+  <div class="mobile-panel" id="mpanel">
+    <a href="/masters-in-telecom/">Home</a>
+    <div class="m-sub">
+      <button id="msubbtn">Diensten <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+      <div class="m-sub-list" id="msublist">
+        <a href="/masters-in-telecom/mobiele-beveiliging/">Mobiele beveiliging</a>
+        <a href="/masters-in-telecom/mobiele-scanning/">Mobiele scanning</a>
+        <a href="/masters-in-telecom/mobiele-telefonie/">Mobiele telefonie</a>
+        <a href="/masters-in-telecom/voip/">VoIP</a>
+        <a href="/masters-in-telecom/outdoor-data/">Outdoor data</a>
+      </div>
+    </div>
+    <a href="/masters-in-telecom/blog/">Blog</a>
+    <a href="/masters-in-telecom/#waarom">Over ons</a>
+    <a href="/masters-in-telecom/#contact">Contact</a>
+    <div class="mobile-cta"><a class="btn btn-primary" href="mailto:dennis@mastersintelecom.nl">Advies aanvragen</a></div>
+  </div>
+</header>
+<section class="blog-hero">
+  <div class="wrap-wide">
+    <span class="eyebrow">Inzichten &amp; Innovatie</span>
+    <h1>Inzichten &amp; Innovatie</h1>
+    <p class="lede">Wat er speelt in telecom, beveiliging en connectiviteit. Concreet uitgelegd, zonder jargon, met de keuzes die er voor jouw bedrijf toe doen.</p>
+  </div>
+</section>
+
+<section class="sec sec-soft">
+  <div class="wrap-wide">
+    <div style="max-width:60ch;margin-bottom:34px">
+      <h2 class="title">Laatste inzichten</h2>
+      <p style="color:var(--muted);font-size:17px;line-height:1.6;margin-top:10px">De nieuwste berichten over mobiele beveiliging, scanning, abonnementen en internet. Kort, duidelijk en gericht op wat het voor je werk betekent.</p>
+    </div>
+    <div class="blog-grid">
+        <a class="bcard" href="/masters-in-telecom/blog/samsung-knox-wat-het-is-en-waarom-het-voor-jou-telt/">
+          <div class="bcard-img" style="background:var(--grad-135)"><img src="/masters-in-telecom/assets/Samsung-Knox-schild.png" alt="Samsung Knox beveiligingsschild" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="bcard-body">
+            <span class="cat">Mobiele beveiliging</span>
+            <h3>Samsung Knox: wat het is en waarom het voor jou telt</h3>
+            <p>Mobiele toestellen staan steeds vaker in het hart van de bedrijfsvoering. Dan wil je weten dat ze goed beveiligd zijn. Samsung Knox regelt dat, van binnenuit.</p>
+            <div class="meta"><span><time datetime="2026-04-30">30 april 2026</time> &middot; 5 min leestijd</span><span class="more">Lees meer &rarr;</span></div>
+          </div>
+        </a>
+        <a class="bcard" href="/masters-in-telecom/blog/wat-doe-je-als-er-geen-glasvezel-beschikbaar-is/">
+          <div class="bcard-img" style="background:var(--grad-135)"><img src="/masters-in-telecom/assets/highspeed-fwa-infographic.png" alt="Buitenantenne en dual-sim router voor 5G Fixed Wireless Access" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="bcard-body">
+            <span class="cat">Glasvezel en internet</span>
+            <h3>Wat doe je als er geen glasvezel beschikbaar is?</h3>
+            <p>Je hebt net een nieuw bedrijfspand betrokken. Alles staat klaar. Alleen: er ligt geen glasvezelkabel. Die situatie zien we vaker dan je denkt.</p>
+            <div class="meta"><span><time datetime="2026-02-26">26 februari 2026</time> &middot; 5 min leestijd</span><span class="more">Lees meer &rarr;</span></div>
+          </div>
+        </a>
+        <a class="bcard" href="/masters-in-telecom/blog/samsung-galaxy-tab-a11-plus-ook-voor-accessoires-bij-masters-in-telecom/">
+          <div class="bcard-img" style="background:var(--grad-135)"><img src="/masters-in-telecom/assets/Samsung-Galaxy.png" alt="Samsung Galaxy Tab A11 Plus tablet" loading="lazy" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='/masters-in-telecom/assets/Mobiele-telefonie.png'}else{this.style.display='none'}"></div>
+          <div class="bcard-body">
+            <span class="cat">Mobiele abonnementen</span>
+            <h3>Samsung Galaxy Tab A11 Plus: ook voor accessoires bij Masters in Telecom</h3>
+            <p>Een nieuwe tablet kopen is één ding. Zorgen dat je hem goed kunt gebruiken voor je werk is een tweede.</p>
+            <div class="meta"><span><time datetime="2026-02-18">18 februari 2026</time> &middot; 5 min leestijd</span><span class="more">Lees meer &rarr;</span></div>
+          </div>
+        </a>
+        <a class="bcard" href="/masters-in-telecom/blog/mobiele-computers-en-scanners-van-newland/">
+          <div class="bcard-img" style="background:var(--grad-135)"><img src="/masters-in-telecom/assets/MT93-Newland-Masters-of_Telecom.png" alt="Newland mobiele computer en handscanner" loading="lazy" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='/masters-in-telecom/assets/Mobiele-scanning-zw-met-filter.png'}else{this.style.display='none'}"></div>
+          <div class="bcard-body">
+            <span class="cat">Mobiele scanning</span>
+            <h3>Mobiele computers en scanners van Newland</h3>
+            <p>In de logistiek, retail, zorg en industrie draait veel om snel en foutloos scannen. Mobiele computers en handscanners zijn daar niet meer weg te denken.</p>
+            <div class="meta"><span><time datetime="2025-11-04">4 november 2025</time> &middot; 2 min leestijd</span><span class="more">Lees meer &rarr;</span></div>
+          </div>
+        </a>
+    </div>
+  </div>
+</section>
+<footer class="foot" data-section="footer"><div class="wrap-wide">
+  <div class="foot-grid">
+    <div>
+      <img src="/masters-in-telecom/assets/2025-LOGO-DELIVERY-MIT512-marge.png" alt="Masters in Telecom">
+      <p class="mission">Je onafhankelijke partner in veilige en betrouwbare zakelijke telecommunicatie.</p>
+    </div>
+    <div>
+      <h3>Navigatie</h3>
+      <ul>
+        <li><a href="/masters-in-telecom/"><span class="b"></span>Home</a></li>
+        <li><a href="/masters-in-telecom/#diensten"><span class="b"></span>Diensten</a></li>
+        <li><a href="/masters-in-telecom/blog/"><span class="b"></span>Blog</a></li>
+        <li><a href="/masters-in-telecom/#waarom"><span class="b"></span>Over ons</a></li>
+        <li><a href="/masters-in-telecom/#contact"><span class="b"></span>Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>De kleine lettertjes</h3>
+      <ul>
+        <li><a href="#"><span class="b"></span>Algemene voorwaarden</a></li>
+        <li><a href="#"><span class="b"></span>Privacy Policy</a></li>
+        <li><a href="#"><span class="b"></span>Cookiebeleid</a></li>
+        <li><a href="#"><span class="b"></span>Ma t/m vr, 09:00 tot 17:00</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Korte lijntjes</h3>
+      <ul>
+        <li><span class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+31 (0)6 51 70 09 99</span></li>
+        <li><a href="mailto:dennis@mastersintelecom.nl"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>dennis@mastersintelecom.nl</a></li>
+        <li><span class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Liebrugweg 5, 1165 AD Halfweg</span></li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <p class="copy">&copy; 2026 Masters in Telecom. Samen zetten we de lijnen uit.</p>
+</div></footer>
+<script src="/masters-in-telecom/script.js"></script>
+</body>
+</html>
