@@ -137,6 +137,16 @@ img{max-width:100%;display:block}
 .wmcard h3{font-size:18px;color:var(--purple);margin-bottom:6px}
 .wmcard p{color:var(--muted);font-size:15px}
 
+/* OVER DENNIS */
+.od{background:var(--soft)}
+.od-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+.od-photo{position:relative;justify-self:center;width:100%;max-width:360px}
+.od-photo::before{content:"";position:absolute;inset:-14px;border-radius:50%;background:var(--grad-135);opacity:.12;z-index:0}
+.od-photo img{position:relative;z-index:1;width:100%;height:auto;border-radius:50%;display:block;object-fit:cover;object-position:center top}
+.od-copy h2{font-size:clamp(26px,3.2vw,36px);color:var(--purple);margin:12px 0 18px}
+.od-copy p{color:var(--muted);font-size:15.5px;margin-bottom:16px;max-width:38em}
+.od-copy .od-cta{margin-top:8px}
+
 /* Partnernetwerk */
 .pn{position:relative;overflow:hidden;background:#fff}
 .pn-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
@@ -211,6 +221,8 @@ img{max-width:100%;display:block}
   .grid3{grid-template-columns:1fr 1fr}
   .vw-grid{grid-template-columns:1fr}
   .wm-grid{grid-template-columns:1fr}
+  .od-grid{grid-template-columns:1fr;gap:32px}
+  .od-photo{max-width:280px;margin:0 auto}
   .nav,.hdr-right .socials,.hdr-right .btn{display:none}
   .burger{display:inline-flex}
   .rings{margin:0 auto;max-width:380px}
