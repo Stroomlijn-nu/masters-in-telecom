@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Tjimka.github.io/masters-in-telecom-home/sitemap.xml
