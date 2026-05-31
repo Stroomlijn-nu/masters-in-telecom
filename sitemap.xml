@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/mobiele-telefonie/</loc>
+    <lastmod>2026-05-31T12:19:25.295Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn-nu.github.io/masters-in-telecom/</loc>
     <lastmod>2026-05-31T12:18:16.931Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -23,11 +28,6 @@
   <url>
     <loc>https://stroomlijn-nu.github.io/masters-in-telecom/mobiele-scanning/</loc>
     <lastmod>2026-05-31T10:35:31.341Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/mobiele-telefonie/</loc>
-    <lastmod>2026-05-31T10:25:49.945Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
