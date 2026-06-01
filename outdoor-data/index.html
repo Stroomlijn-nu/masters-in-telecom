@@ -8,26 +8,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- SEO Meta Tags -->
+<title>Outdoor data | Zakelijk internet zonder vaste lijn | Masters in Telecom</title>
+<meta name="description" content="Zakelijk internet via 5G op plekken zonder glasvezel. Buitenantenne, router met dual-sim en beheer op afstand. Voor bouw, buitengebied en tijdelijke locaties.">
+<meta name="keywords" content="outdoor data, fixed wireless access, FWA, 5G internet zakelijk, internet zonder glasvezel, internet op locatie, dual-sim router, internet bouwplaats">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Masters in Telecom">
+
+<link rel="canonical" href="https://www.mastersintelecom.nl/outdoor-data/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.mastersintelecom.nl/outdoor-data/">
+<meta property="og:title" content="Outdoor data | Zakelijk internet zonder vaste lijn | Masters in Telecom">
+<meta property="og:description" content="Zakelijk internet via 5G op plekken zonder glasvezel. Buitenantenne, router met dual-sim en beheer op afstand. Voor bouw, buitengebied en tijdelijke locaties.">
+<meta property="og:image" content="https://app.stroomlijn.nu/api/landing-pages/images/coding-agent-assets%2F82%2F1780151049343_highspeed_fwa_infographic.png">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Masters in Telecom">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Outdoor data | Zakelijk internet zonder vaste lijn | Masters in Telecom">
+<meta name="twitter:description" content="Zakelijk internet via 5G op plekken zonder glasvezel. Buitenantenne, router met dual-sim en beheer op afstand. Voor bouw, buitengebied en tijdelijke locaties.">
+<meta name="twitter:image" content="https://app.stroomlijn.nu/api/landing-pages/images/coding-agent-assets%2F82%2F1780151049343_highspeed_fwa_infographic.png">
+<meta name="geo.region" content="NL">
+<meta name="geo.placename" content="Nederland">
+<!-- End SEO Meta Tags -->
 
 <link rel="icon" href="../assets/2025-LOGO-DELIVERY-MIT512-marge.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 
-
-<!-- SEO Meta Tags -->
-
-
-
-
-
-
-
-
-
-<!-- End SEO Meta Tags -->
-
-
+<!-- Field-replace (één keer) -->
 <script data-field-replace>
 (function(){
   var params=new URLSearchParams(window.location.search);
@@ -152,6 +162,8 @@
   else{run();}
 })();
 </script>
+
+<!-- Payment (één keer) -->
 <script data-payment>
 (function(){
   var slug='5BStCpEe';
@@ -210,205 +222,66 @@
       if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
     }
   });
-})();
-</script>  <link rel="stylesheet" href="styles.css">
-
-<!-- SEO Meta Tags -->
-<title>Outdoor data | Internet op elke locatie | Masters in Telecom</title>
-<meta name="description" content="Snel zakelijk internet zonder vaste lijn, via het mobiele netwerk met router en buitenantenne. Voor bouw, buitengebied en tijdelijke locaties." />
-<meta name="keywords" content="outdoor data" />
-<meta property="og:title" content="Outdoor data | Internet op elke locatie | Masters in Telecom" />
-<meta property="og:description" content="Snel zakelijk internet zonder vaste lijn, via het mobiele netwerk met router en buitenantenne. Voor bouw, buitengebied en tijdelijke locaties." />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Outdoor data | Internet op elke locatie | Masters in Telecom" />
-<meta name="twitter:description" content="Snel zakelijk internet zonder vaste lijn, via het mobiele netwerk met router en buitenantenne. Voor bouw, buitengebied en tijdelijke locaties." />
-<!-- End SEO Meta Tags -->
-
-<script data-field-replace>
-(function(){
-  var params=new URLSearchParams(window.location.search);
-  var fields={};
-  var paramMap={
-    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
-    'email':'email','phone':'phone','company':'company',
-    'city':'city','state':'state','country':'country'
-  };
-  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
-  var hasUrlFields=false;
-  for(var p in paramMap){
-    var v=params.get(p);
-    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
-  }
-  var contactId=params.get('contact_id');
-  function esc(s){
-    if(!s)return s;
-    var d=document.createElement('div');
-    d.appendChild(document.createTextNode(s));
-    return d.innerHTML;
-  }
-  function doReplace(data){
-    var r={};
-    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
-    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
-    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
-    r['{{email}}']=esc(data.email||'');
-    r['{{phone}}']=esc(data.phone||'');
-    r['{{company}}']=esc(data.company||'');
-    r['{{city}}']=esc(data.city||'');
-    r['{{state}}']=esc(data.state||'');
-    r['{{country}}']=esc(data.country||'');
-    r['{{date}}']=new Date().toLocaleDateString();
-    r['{{time}}']=new Date().toLocaleTimeString();
-    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
-    r['{{tracking_id}}']=esc(data.trackingId||'');
-    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
-    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
-    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
-    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
-    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
-    r['{{ip_address}}']=esc(data.ipAddress||'');
-    r['{{ip}}']=esc(data.ipAddress||'');
-    if(data.customFields){
-      for(var k in data.customFields){
-        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
-      }
-    }
-    params.forEach(function(v,k){
-      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
-        r['{{'+k+'}}']=esc(v);
-      }
-    });
-    var hasValues=false;
-    for(var key in r){if(r[key]){hasValues=true;break;}}
-    if(!hasValues)return;
-    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
-      acceptNode:function(n){
-        var p=n.parentNode;
-        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
-        return NodeFilter.FILTER_ACCEPT;
-      }
-    });
-    var node;
-    while(node=walker.nextNode()){
-      var txt=node.nodeValue;
-      if(txt&&txt.indexOf('{{')>-1){
-        var changed=txt;
-        for(var ph in r){
-          if(r[ph]&&changed.indexOf(ph)>-1){
-            changed=changed.split(ph).join(r[ph]);
-          }
-        }
-        if(changed!==txt)node.nodeValue=changed;
-      }
-    }
-    var attrs=['value','placeholder','content','alt','title'];
-    attrs.forEach(function(attr){
-      var els=document.querySelectorAll('['+attr+'*="{{"]');
-      for(var i=0;i<els.length;i++){
-        var tag=els[i].tagName;
-        if(skipTags[tag])continue;
-        var val=els[i].getAttribute(attr);
-        if(val){
-          var nv=val;
-          for(var ph in r){
-            if(r[ph]&&nv.indexOf(ph)>-1){
-              nv=nv.split(ph).join(r[ph]);
-            }
-          }
-          if(nv!==val)els[i].setAttribute(attr,nv);
-        }
-      }
-    });
-  }
-  function run(){
-    if(contactId){
-      var xhr=new XMLHttpRequest();
-      xhr.open('GET','https://app.stroomlijn.nu/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=4450');
-      xhr.onload=function(){
-        if(xhr.status===200){
-          try{
-            var resp=JSON.parse(xhr.responseText);
-            if(resp.success&&resp.contact){
-              var merged=resp.contact;
-              for(var k in fields){merged[k]=fields[k];}
-              doReplace(merged);
-              return;
-            }
-          }catch(e){}
-        }
-        if(hasUrlFields)doReplace(fields);
-      };
-      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
-      xhr.send();
-    }else if(hasUrlFields){
-      doReplace(fields);
-    }
-  }
-  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
-  else{run();}
 })();
 </script>
-<script data-payment>
-(function(){
-  var slug='5BStCpEe';
-  var apiBase='https://app.stroomlijn.nu';
-  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
-  function findEmail(){
-    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
-    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
-    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
-    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
-    return '';
-  }
-  function findName(){
-    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
-    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
-    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
-    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
-    return '';
-  }
-  var __realProcessPayment=function(a,b,c,d,e){
-    var amountCents,email,productName,productDescription,customerName,quantity;
-    if(a&&typeof a==='object'){
-      amountCents=a.amountCents;email=a.email;productName=a.productName;
-      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
-    }else{
-      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
-      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Outdoor data (Fixed Wireless Access)",
+  "serviceType": "Zakelijk internet via 5G zonder vaste lijn",
+  "provider": { "@id": "https://www.mastersintelecom.nl/#org" },
+  "areaServed": { "@type": "Country", "name": "NL" },
+  "description": "Internet via het mobiele 5G-netwerk met buitenantenne en een router met dual-sim. Geschikt voor bouwplaatsen, tijdelijke vestigingen en locaties in het buitengebied zonder glasvezel."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is Outdoor data precies?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Outdoor data, ook wel Fixed Wireless Access, is internet via het mobiele netwerk in plaats van via een kabel. Een buitenantenne vangt het 5G-signaal op en een router met dual-sim verdeelt het over je locatie. Handig op plekken zonder glasvezel of vaste lijn." }
+    },
+    {
+      "@type": "Question",
+      "name": "Heb ik glasvezel of een vaste lijn nodig?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nee. Outdoor data werkt volledig via 5G, dus je hebt geen kabel in de grond nodig. Goed voor plekken waar nog geen aansluiting ligt of waar die niet komt." }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat gebeurt er als een netwerk uitvalt?",
+      "acceptedAnswer": { "@type": "Answer", "text": "De router heeft twee simkaarten. Odido is de hoofdverbinding en KPN staat als back-up klaar. Valt het ene netwerk weg, dan schakelt de router automatisch over naar het tweede." }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe snel ben ik online?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Meestal binnen een dag. Je hebt geen graafwerk of monteursafspraak nodig. De antenne en router worden geplaatst en ingesteld, daarna staat de verbinding." }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik meerdere locaties centraal beheren?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Vanaf een beheerconsole bewaak en beheer je alle locaties op afstand. Je past instellingen aan en ziet meteen of alles werkt, zonder ter plaatse te gaan." }
     }
-    if(!email)email=findEmail();
-    if(!customerName)customerName=findName();
-    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
-    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
-    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
-    var successBase=window.location.href.split('?')[0];
-    var __pLoc=(document.documentElement.lang||navigator.language||'en');
-    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
-      method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({email:email,name:customerName,amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
-    }).then(function(r){return r.json();}).then(function(d){
-      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
-      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
-    });
-  };
-  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
-  document.addEventListener('DOMContentLoaded',function(){
-    var urlParams=new URLSearchParams(window.location.search);
-    if(urlParams.get('payment')==='success'){
-      var pName=urlParams.get('product')||'your item';
-      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
-      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
-      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
-      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
-      document.body.appendChild(overlay);
-      var pBtn=document.getElementById('lp-pay-success-btn');
-      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
-    }
-  });
-})();
-</script></head>
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mastersintelecom.nl/" },
+    { "@type": "ListItem", "position": 2, "name": "Outdoor data", "item": "https://www.mastersintelecom.nl/outdoor-data/" }
+  ]
+}
+</script>
+
+</head>
 <body>
 
 <!-- ============================================================================ -->
@@ -439,7 +312,6 @@
           </div>
         </div>
         <a href="/masters-in-telecom/blog/">Blog</a>
-        <a href="/masters-in-telecom/blog/">Blog</a>
         <a href="../#waarom">Over ons</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -465,7 +337,6 @@
         <a href="../voip/">VoIP</a>
         <a href="#top">Outdoor data</a>
       </div>
-      <a href="/masters-in-telecom/blog/">Blog</a>
     </div>
     <a href="/masters-in-telecom/blog/">Blog</a>
     <a href="../#waarom">Over ons</a>
@@ -535,24 +406,18 @@
 
 <!-- ============================================================================ -->
 <!-- INFOGRAPHIC: Visuele diagram van de Highspeed FWA opstelling                  -->
-<!-- Notes: De afbeelding staat in een gestylde kaart met gradient accentbalk,     -->
-<!-- zachte schaduw en een onderschrift met de drie componenten.                   -->
 <!-- ============================================================================ -->
 <section class="sec infographic-section" id="opstelling" data-section="infographic">
   <div class="wrap">
     <div class="infographic-outer">
 
-      <!-- Section header -->
       <div class="infographic-header reveal">
         <span class="eyebrow">De opstelling</span>
         <h2>Zo ziet Highspeed FWA eruit</h2>
         <p>Van het 5G-signaal aan de buitenantenne tot centraal beheer op afstand, in drie stappen.</p>
       </div>
 
-      <!-- Image card with polished frame -->
       <div class="infographic-card reveal">
-        <!-- Gradient accent bar rendered via ::before pseudo-element in CSS -->
-
         <div class="infographic-img-wrap">
           <img
             src="https://app.stroomlijn.nu/api/landing-pages/images/coding-agent-assets%2F82%2F1780151049343_highspeed_fwa_infographic.png"
@@ -562,7 +427,6 @@
           >
         </div>
 
-        <!-- Caption strip below the image -->
         <div class="infographic-caption">
           <span class="cap-item"><span class="cap-dot"></span>Buitenantenne &amp; 5G-ontvangst</span>
           <span class="cap-item"><span class="cap-dot"></span>Router met dual-sim</span>
@@ -631,7 +495,7 @@
   <div class="center reveal"><h2 class="title">Wat klanten zeggen</h2><div style="height:4px;width:90px;margin:16px auto 0;border-radius:99px;background:var(--grad);opacity:.4"></div></div>
   <div class="rv-vp"><div class="rv-track" id="rvtrack">
     <div class="rvcard"><div class="rvinner"><div class="q">&ldquo;</div><p class="quote">Je werk gaat 24/7 door, dus je hebt optimale bereikbaarheid nodig op het KPN-netwerk. Masters in Telecom houdt je uitstekend op de hoogte over je beveiliging.</p><div class="auth"><h4>Hettie Oudelaar</h4><span>Nordian Capital Partners</span></div></div></div>
-    <div class="rvcard"><div class="rvinner"><div class="q">&ldquo;</div><p class="quote">Dennis ontzorgt je volledig op het gebied van mobiele communicatie. Hij voelt als een van je eigen collega's en staat altijd voor je klaar wanneer je hem nodig hebt.</p><div class="auth"><h4>Rene van Romunde</h4><span>DPRS</span></div></div></div>
+    <div class="rvcard"><div class="rvinner"><div class="q">&ldquo;</div><p class="quote">Dennis ontzorgt je volledig op het gebied van mobiele communicatie. Hij voelt als een van je eigen collega's en staat altijd voor je klaar wanneer je hem nodig hebt.</p><div class="auth"><h4>Rene van Romunde</h4><span>De Pieter Raat Stichting</span></div></div></div>
     <div class="rvcard"><div class="rvinner"><div class="q">&ldquo;</div><p class="quote">Dennis begrijpt precies wat je organisatie nodig heeft en levert de service die je verwacht. Een betrouwbare partner die met je meedenkt voor je groei.</p><div class="auth"><h4>Jan Mastemaker</h4><span>Toekomstgroep</span></div></div></div>
   </div></div>
   <div class="rv-dots" id="rvdots"></div>
@@ -678,7 +542,6 @@
   <p class="copy">&copy; 2026 Masters in Telecom. Samen zetten we de lijnen uit.</p>
 </div></footer>
 
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
