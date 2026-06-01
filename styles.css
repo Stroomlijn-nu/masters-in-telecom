@@ -1,3 +1,11 @@
+/* === Reset: layout fix voor Windows/Chrome === */
+html, body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* rest van je bestaande CSS hieronder */
+
 :root{
   --purple:#951B81; --pink:#D60B52; --ink:#0a0a0f;
   --grad:linear-gradient(90deg,#951B81,#D60B52);
