@@ -607,5 +607,24 @@
 
 
   <script src="script.js"></script>
+
+  <style>
+#mit-cookie-banner{display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#3B0256;color:#fff;font-family:'Poppins',sans-serif;font-size:14px;padding:16px 24px;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;box-shadow:0 -4px 24px rgba(0,0,0,.3)}
+#mit-cookie-banner p{flex:1;min-width:260px;line-height:1.6;color:rgba(255,255,255,.9);margin:0}
+#mit-cookie-banner a{color:#D60B52;text-decoration:underline}
+.mit-cookie-btns{display:flex;gap:12px;flex-shrink:0;flex-wrap:wrap}
+#mit-accept-all{background:#D60B52;color:#fff;border:none;padding:10px 20px;border-radius:5px;font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;cursor:pointer;transition:opacity .2s}
+#mit-accept-all:hover{opacity:.88}
+#mit-accept-essential{background:transparent;color:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.35);padding:10px 20px;border-radius:5px;font-family:'Poppins',sans-serif;font-size:14px;font-weight:500;cursor:pointer;transition:background .2s}
+#mit-accept-essential:hover{background:rgba(255,255,255,.1)}
+@media(max-width:600px){#mit-cookie-banner{flex-direction:column;align-items:flex-start}.mit-cookie-btns{width:100%}#mit-accept-all,#mit-accept-essential{flex:1;text-align:center}}
+</style>
+<div id="mit-cookie-banner" role="dialog" aria-label="Cookiemelding">
+  <p>Wij gebruiken cookies om te meten hoe bezoekers onze website gebruiken. Zie ons <a href="/algemene-voorwaarden" target="_blank">cookiebeleid</a>.</p>
+  <div class="mit-cookie-btns">
+    <button id="mit-accept-all">Accepteer alle cookies</button>
+    <button id="mit-accept-essential">Alleen noodzakelijk</button>
+  </div>
+</div>
 </body>
 </html>
