@@ -1,3 +1,11 @@
+/* === Reset: layout fix voor Windows/Chrome === */
+html, body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* rest van je bestaande CSS hieronder */
+
 :root{
   --purple:#951B81; --pink:#D60B52; --ink:#0a0a0f;
   --grad:linear-gradient(90deg,#951B81,#D60B52);
@@ -233,4 +241,5 @@ img{max-width:100%;display:block}
   .hdr-in{min-height:88px}
   .hdr-logo img{height:54px}
   .dcard{height:300px}
+  .hero-top{padding:60px 20px 40px}
 }
