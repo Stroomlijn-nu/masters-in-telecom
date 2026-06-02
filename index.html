@@ -8,6 +8,45 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google Analytics: Consent Mode v2 — laadt VOOR gtag.js -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    ad_storage:        'denied',
+    analytics_storage: 'denied',
+    ad_user_data:      'denied',
+    ad_personalization:'denied',
+    wait_for_update:   500
+  });
+</script>
+<!-- Google tag -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-STY5S3NRKH"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-STY5S3NRKH', { anonymize_ip: true });
+</script>
+<!-- Cookie consent logica -->
+<script>
+(function(){
+  var KEY='mit_cookie_consent',DAYS=365;
+  function setConsent(ok){
+    gtag('consent','update',{analytics_storage:ok?'granted':'denied'});
+    var exp=new Date(); exp.setDate(exp.getDate()+DAYS);
+    localStorage.setItem(KEY,JSON.stringify({analytics:ok,expiry:exp.toISOString()}));
+  }
+  function hide(){var b=document.getElementById('mit-cookie-banner');if(b)b.style.display='none';}
+  function show(){var b=document.getElementById('mit-cookie-banner');if(b)b.style.display='flex';}
+  var stored=localStorage.getItem(KEY);
+  if(stored){try{var d=JSON.parse(stored);if(d.expiry&&new Date(d.expiry)>new Date()){setConsent(d.analytics);document.addEventListener('DOMContentLoaded',hide);return;}}catch(e){}}
+  document.addEventListener('DOMContentLoaded',function(){
+    show();
+    document.getElementById('mit-accept-all').addEventListener('click',function(){setConsent(true);hide();});
+    document.getElementById('mit-accept-essential').addEventListener('click',function(){setConsent(false);hide();});
+  });
+})();
+</script>
+
 <!-- Favicon --> 
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <link rel="icon" type="image/png" href="https://mastersintelecom.nl/assets/2025-LOGO-DELIVERY-MIT512-marge.png" sizes="512x512">
