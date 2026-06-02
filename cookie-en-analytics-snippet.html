@@ -1,0 +1,190 @@
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  MASTERS IN TELECOM — COOKIEMELDING + GOOGLE ANALYTICS SNIPPET  ║
+  ║  Plaats dit blok in de <head> van elke pagina.                  ║
+  ║  De Google tag laadt alleen na expliciete toestemming.          ║
+  ╚══════════════════════════════════════════════════════════════════╝
+
+  WAT BEWAARD BLIJFT VAN DE BESTAANDE SETUP:
+  - GA4-tag G-STY5S3NRKH (dezelfde Property ID als op de oude site)
+  - Cookiebanner in de MiT-huisstijl (paars #3B0256 achtergrond,
+    roze/rood #D60B52 als primaire knop, Poppins font)
+  - Nederlandse teksten
+  - "ask-opt-in" consent-model (GDPR-conform)
+
+  WAT VERBETERD IS:
+  - Google Analytics start pas NA toestemming (Consent Mode v2)
+  - Voorkeur wordt 365 dagen bewaard in localStorage
+  - Geen externe cookie-consent bibliotheek nodig
+  - Minimale code, volledig self-hosted
+-->
+
+<!-- ═══ 1. CONSENT MODE v2 — zet dit BOVENAAN <head>, vóór gtag.js ═══ -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  // Standaard: alles geweigerd totdat de gebruiker kiest
+  gtag('consent', 'default', {
+    ad_storage:            'denied',
+    analytics_storage:     'denied',
+    ad_user_data:          'denied',
+    ad_personalization:    'denied',
+    wait_for_update:       500
+  });
+</script>
+
+<!-- ═══ 2. GOOGLE TAG — laadt altijd, maar meet pas na toestemming ═══ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-STY5S3NRKH"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-STY5S3NRKH', { anonymize_ip: true });
+</script>
+
+<!-- ═══ 3. COOKIE CONSENT LOGICA ═══ -->
+<script>
+(function() {
+  var STORAGE_KEY = 'mit_cookie_consent';
+  var EXPIRY_DAYS = 365;
+
+  function setConsent(analytics) {
+    gtag('consent', 'update', {
+      analytics_storage: analytics ? 'granted' : 'denied'
+    });
+    var expiry = new Date();
+    expiry.setDate(expiry.getDate() + EXPIRY_DAYS);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+      analytics: analytics,
+      timestamp: Date.now(),
+      expiry: expiry.toISOString()
+    }));
+  }
+
+  function hideBanner() {
+    var banner = document.getElementById('mit-cookie-banner');
+    if (banner) banner.style.display = 'none';
+  }
+
+  function showBanner() {
+    var banner = document.getElementById('mit-cookie-banner');
+    if (banner) banner.style.display = 'flex';
+  }
+
+  // Check bestaande voorkeur
+  var stored = localStorage.getItem(STORAGE_KEY);
+  if (stored) {
+    try {
+      var data = JSON.parse(stored);
+      if (data.expiry && new Date(data.expiry) > new Date()) {
+        setConsent(data.analytics);
+        // Banner hoeft niet getoond: voorkeur al bekend
+        document.addEventListener('DOMContentLoaded', hideBanner);
+        return;
+      }
+    } catch(e) {}
+  }
+
+  // Geen voorkeur gevonden: toon banner na laden pagina
+  document.addEventListener('DOMContentLoaded', function() {
+    showBanner();
+
+    document.getElementById('mit-accept-all').addEventListener('click', function() {
+      setConsent(true);
+      hideBanner();
+    });
+
+    document.getElementById('mit-accept-essential').addEventListener('click', function() {
+      setConsent(false);
+      hideBanner();
+    });
+  });
+})();
+</script>
+
+<!-- ═══ 4. COOKIEBANNER HTML + CSS (plaatst direct voor </body>) ═══ -->
+<!--
+  Plak het onderstaande blok direct VOOR de sluitende </body> tag
+  op elke pagina. De <script> hierboven regelt de logica.
+-->
+
+<style>
+  #mit-cookie-banner {
+    display: none; /* wordt getoond via JS als nodig */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: #3B0256;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding: 16px 24px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    box-shadow: 0 -4px 24px rgba(0,0,0,0.3);
+  }
+  #mit-cookie-banner p {
+    flex: 1;
+    min-width: 260px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.9);
+    margin: 0;
+  }
+  #mit-cookie-banner a {
+    color: #D60B52;
+    text-decoration: underline;
+  }
+  .mit-cookie-btns {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+  }
+  #mit-accept-all {
+    background: #D60B52;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  #mit-accept-all:hover { opacity: 0.88; }
+  #mit-accept-essential {
+    background: transparent;
+    color: rgba(255,255,255,0.8);
+    border: 1px solid rgba(255,255,255,0.35);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  #mit-accept-essential:hover { background: rgba(255,255,255,0.1); }
+
+  @media (max-width: 600px) {
+    #mit-cookie-banner { flex-direction: column; align-items: flex-start; }
+    .mit-cookie-btns { width: 100%; }
+    #mit-accept-all, #mit-accept-essential { flex: 1; text-align: center; }
+  }
+</style>
+
+<div id="mit-cookie-banner" role="dialog" aria-label="Cookiemelding">
+  <p>
+    Wij gebruiken cookies om te meten hoe bezoekers onze website gebruiken.
+    De analysegegevens helpen ons de site te verbeteren.
+    Zie ons <a href="/algemene-voorwaarden" target="_blank">cookiebeleid</a>.
+  </p>
+  <div class="mit-cookie-btns">
+    <button id="mit-accept-all">Accepteer alle cookies</button>
+    <button id="mit-accept-essential">Alleen noodzakelijk</button>
+  </div>
+</div>
