@@ -36,10 +36,8 @@ gtag('js', new Date());
   });
 })();
 
-// Header scroll
 var hdr=document.getElementById('hdr');
 window.addEventListener('scroll',function(){hdr.classList.toggle('scrolled',window.scrollY>10);});
-// Mobile menu
 var burger=document.getElementById('burger'),mpanel=document.getElementById('mpanel');
 burger.addEventListener('click',function(){mpanel.classList.toggle('open');});
 document.getElementById('msubbtn').addEventListener('click',function(){document.getElementById('msublist').classList.toggle('open');});
