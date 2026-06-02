@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/blog/mobiele-computers-en-scanners-van-newland/</loc>
+    <lastmod>2026-06-02T11:37:15.459Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn-nu.github.io/masters-in-telecom/blog/samsung-galaxy-tab-a11-plus-ook-voor-accessoires-bij-masters-in-telecom/</loc>
     <lastmod>2026-06-02T11:37:08.336Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -53,11 +58,6 @@
   <url>
     <loc>https://stroomlijn-nu.github.io/masters-in-telecom/</loc>
     <lastmod>2026-06-02T11:35:53.801Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/blog/mobiele-computers-en-scanners-van-newland/</loc>
-    <lastmod>2026-06-02T11:35:40.492Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
