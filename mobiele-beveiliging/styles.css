@@ -109,15 +109,16 @@ img{max-width:100%;display:block}
 .casecard p{color:rgba(255,255,255,.72);font-size:16px}
 .faq-list{max-width:840px;margin:46px auto 0}
 .faq-item{border:1px solid var(--line);border-radius:14px;margin-bottom:14px;background:#fff;overflow:hidden}
-.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 26px;background:none;border:none;cursor:pointer;font-family:var(--display);font-weight:700;font-size:17px;color:var(--purple);text-align:left}
-.faq-q .pl{flex:none;width:24px;height:24px;position:relative;transition:transform .3s}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 26px;background:none;border:none;outline:none;-webkit-appearance:none;appearance:none;cursor:pointer;font-family:var(--display);font-weight:700;font-size:17px;color:var(--purple);text-align:left}.faq-q .pl{flex:none;width:24px;height:24px;position:relative;transition:transform .3s}
 .faq-q .pl::before,.faq-q .pl::after{content:"";position:absolute;background:var(--pink);border-radius:2px}
 .faq-q .pl::before{top:11px;left:3px;right:3px;height:2px}
 .faq-q .pl::after{left:11px;top:3px;bottom:3px;width:2px}
 .faq-item.open .faq-q .pl{transform:rotate(45deg)}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
-.faq-a p{padding:0 26px 24px;color:var(--text);font-size:15.5px;max-width:60em}
-.faq-item.open .faq-a{max-height:360px}
+.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.faq-a>p{overflow:hidden}
+.faq-a p{padding:0 26px;color:var(--text);font-size:15.5px;max-width:60em}
+.faq-item.open .faq-a{grid-template-rows:1fr}
+.faq-item.open .faq-a p{padding:0 26px 24px}
 .reviews{background:var(--soft);overflow:hidden}
 .rv-track{display:flex;transition:transform .5s ease}
 .rv-vp{overflow:hidden;max-width:880px;margin:46px auto 0}
