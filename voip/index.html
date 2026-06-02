@@ -8,78 +8,43 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Analytics: Consent Mode v2 — laadt VOOR gtag.js -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', {
-    ad_storage:        'denied',
-    analytics_storage: 'denied',
-    ad_user_data:      'denied',
-    ad_personalization:'denied',
-    wait_for_update:   500
-  });
-</script>
-<!-- Google tag -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-STY5S3NRKH"></script>
-<script>
-  gtag('js', new Date());
-  gtag('config', 'G-STY5S3NRKH', { anonymize_ip: true });
-</script>
-<!-- Cookie consent logica -->
-<script>
-(function(){
-  var KEY='mit_cookie_consent',DAYS=365;
-  function setConsent(ok){
-    gtag('consent','update',{analytics_storage:ok?'granted':'denied'});
-    var exp=new Date(); exp.setDate(exp.getDate()+DAYS);
-    localStorage.setItem(KEY,JSON.stringify({analytics:ok,expiry:exp.toISOString()}));
-  }
-  function hide(){var b=document.getElementById('mit-cookie-banner');if(b)b.style.display='none';}
-  function show(){var b=document.getElementById('mit-cookie-banner');if(b)b.style.display='flex';}
-  var stored=localStorage.getItem(KEY);
-  if(stored){try{var d=JSON.parse(stored);if(d.expiry&&new Date(d.expiry)>new Date()){setConsent(d.analytics);document.addEventListener('DOMContentLoaded',hide);return;}}catch(e){}}
-  document.addEventListener('DOMContentLoaded',function(){
-    show();
-    document.getElementById('mit-accept-all').addEventListener('click',function(){setConsent(true);hide();});
-    document.getElementById('mit-accept-essential').addEventListener('click',function(){setConsent(false);hide();});
-  });
-})();
-</script>
 
-<!-- Favicon --
-<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-<link rel="icon" type="image/png" href="https://mastersintelecom.nl/assets/2025-LOGO-DELIVERY-MIT512-marge.png" sizes="512x512">
+
+<link rel="icon" href="../assets/2025-LOGO-DELIVERY-MIT512-marge.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 
 <!-- SEO Meta Tags -->
-<meta name="robots" content="index, follow">
-<meta name="author" content="Masters in Telecom">
-  
 <title>VoIP voor jouw bedrijf | Masters in Telecom</title>
-<meta name="description" content="Zakelijk bellen via internet met vaste nummerweergave en bereikbaarheid op elk toestel. Advies en inrichting van je VoIP-omgeving door Masters in Telecom." />
-<meta name="keywords" content="VoIP, zakelijk bellen via internet, VoIP telefonie, bellen over internet, telefooncentrale internet, zakelijke telefonie" />
+<meta name="description" content="Zakelijk bellen via internet. Je houdt je vaste nummers, belt vanaf elk toestel en groeit eenvoudig mee. Eén vast aanspreekpunt." />
+<meta name="keywords" content="voip zakelijk bellen" />
 <meta property="og:title" content="VoIP voor jouw bedrijf | Masters in Telecom" />
-<meta property="og:description" content="Zakelijk bellen via internet met vaste nummerweergave en bereikbaarheid op elk toestel. Advies en inrichting van je VoIP-omgeving door Masters in Telecom." />
-<meta property="og:image" content="https://mastersintelecom.nl/assets/2025-LOGO-DELIVERY-MIT512-marge.png" />
+<meta property="og:description" content="Zakelijk bellen via internet. Je houdt je vaste nummers, belt vanaf elk toestel en groeit eenvoudig mee. Eén vast aanspreekpunt." />
+<meta property="og:image" content="https://stroomlijn-nu.github.io/masters-in-telecom/assets/2025-LOGO-DELIVERY-MIT512-marge.png" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="VoIP voor jouw bedrijf | Masters in Telecom" />
 <meta name="twitter:description" content="Zakelijk bellen via internet. Je houdt je vaste nummers, belt vanaf elk toestel en groeit eenvoudig mee. Eén vast aanspreekpunt." />
-<meta name="twitter:image" content="https://mastersintelecom.nl/assets/2025-LOGO-DELIVERY-MIT512-marge.png" />
-
-<link rel="canonical" href="https://www.mastersintelecom.nl/voip/">
-<meta property="og:url" content="https://www.mastersintelecom.nl/voip/">
-<meta property="og:image" content="https://mastersintelecom.nl/assets/VoIP-zw-met-filter.png">
-<meta property="og:locale" content="nl_NL">
-<meta property="og:site_name" content="Masters in Telecom">
-<meta name="twitter:image" content="https://mastersintelecom.nl/assets/VoIP-zw-met-filter.png">
-<meta name="geo.region" content="NL">
-<meta name="geo.placename" content="Nederland">
+<meta name="twitter:image" content="https://stroomlijn-nu.github.io/masters-in-telecom/assets/2025-LOGO-DELIVERY-MIT512-marge.png" />
 <!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="voip";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  var u=new URL(location.href);var found=null;var changed=false;
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
 
 <script data-field-replace>
 (function(){
@@ -265,28 +230,6 @@
   });
 })();
 </script>  <link rel="stylesheet" href="styles.css">
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "VoIP",
-  "serviceType": "Zakelijk bellen via internet",
-  "provider": { "@id": "https://www.mastersintelecom.nl/#org" },
-  "areaServed": { "@type": "Country", "name": "NL" },
-  "description": "Zakelijke telefonie via internet, met bereikbaarheid op vaste toestellen, mobiel en laptop, en een vaste nummerweergave voor je bedrijf."
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mastersintelecom.nl/" },
-    { "@type": "ListItem", "position": 2, "name": "VoIP", "item": "https://www.mastersintelecom.nl/voip/" }
-  ]
-}
-</script>
 </head>
 <body>
 
@@ -313,6 +256,7 @@
             <a href="../outdoor-data/">Outdoor data</a>
           </div>
         </div>
+        <a href="/masters-in-telecom/blog/">Blog</a>
         <a href="/masters-in-telecom/blog/">Blog</a>
         <a href="../#waarom">Over ons</a>
         <a href="#contact">Contact</a>
@@ -341,11 +285,32 @@
       </div>
     </div>
     <a href="/masters-in-telecom/blog/">Blog</a>
+    <a href="/masters-in-telecom/blog/">Blog</a>
     <a href="../#waarom">Over ons</a>
     <a href="#contact">Contact</a>
     <div class="mobile-cta"><a class="btn btn-primary" href="mailto:dennis@mastersintelecom.nl">Advies aanvragen</a></div>
   </div>
-
+  <footer class="foot">
+    <div class="wrap-wide">
+      <div class="foot-grid">
+        <div>
+          <img src="../assets/2025-LOGO-DELIVERY-MIT512X128-kopie.png" alt="Masters in Telecom">
+          <p class="mission">...</p>
+        </div>
+        <div>
+          <h3>Navigatie</h3>
+          <ul>
+            <li><a href="../#diensten"><span class="b"></span>Diensten</a></li>
+            <li><a href="/masters-in-telecom/blog/"><span class="b"></span>Blog</a></li>
+            <li><a href="../#waarom"><span class="b"></span>Over ons</a></li>
+            <li><a href="#contact"><span class="b"></span>Contact</a></li>
+          </ul>
+        </div>
+        <div>...</div>
+        <div>...</div>
+      </div>
+    </div>
+  </footer>
 </header>
 
 <!-- HERO -->
@@ -456,9 +421,10 @@
     <div>
       <h3>De kleine lettertjes</h3>
       <ul>
-        <li><a href="#"><span class="b"></span>Algemene voorwaarden</a></li>
-        <li><a href="#"><span class="b"></span>Privacy Policy</a></li>
-        <li><a href="#"><span class="b"></span>Cookiebeleid</a></li>
+        <li><a href="../algemene-voorwaarden/"><span class="b"></span>Algemene voorwaarden</a></li>
+        <li><a href="../privacybeleid/"><span class="b"></span>Privacybeleid</a></li>
+        <li><a href="../privacybeleid/"><span class="b"></span>privacybeleid</a></li>
+        <li><a href="#"><span class="b"></span>Disclaimer</a></li>
         <li><a href="#"><span class="b"></span>Ma t/m vr, 09:00 tot 17:00</a></li>
       </ul>
     </div>
@@ -477,25 +443,5 @@
 
 
   <script src="script.js"></script>
-
-  <!-- Cookiebanner -->
-  <style>
-#mit-cookie-banner{display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#3B0256;color:#fff;font-family:'Poppins',sans-serif;font-size:14px;padding:16px 24px;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;box-shadow:0 -4px 24px rgba(0,0,0,.3)}
-#mit-cookie-banner p{flex:1;min-width:260px;line-height:1.6;color:rgba(255,255,255,.9);margin:0}
-#mit-cookie-banner a{color:#D60B52;text-decoration:underline}
-.mit-cookie-btns{display:flex;gap:12px;flex-shrink:0;flex-wrap:wrap}
-#mit-accept-all{background:#D60B52;color:#fff;border:none;padding:10px 20px;border-radius:5px;font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;cursor:pointer;transition:opacity .2s}
-#mit-accept-all:hover{opacity:.88}
-#mit-accept-essential{background:transparent;color:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.35);padding:10px 20px;border-radius:5px;font-family:'Poppins',sans-serif;font-size:14px;font-weight:500;cursor:pointer;transition:background .2s}
-#mit-accept-essential:hover{background:rgba(255,255,255,.1)}
-@media(max-width:600px){#mit-cookie-banner{flex-direction:column;align-items:flex-start}.mit-cookie-btns{width:100%}#mit-accept-all,#mit-accept-essential{flex:1;text-align:center}}
-</style>
-<div id="mit-cookie-banner" role="dialog" aria-label="Cookiemelding">
-  <p>Wij gebruiken cookies om te meten hoe bezoekers onze website gebruiken. Zie ons <a href="/algemene-voorwaarden" target="_blank">cookiebeleid</a>.</p>
-  <div class="mit-cookie-btns">
-    <button id="mit-accept-all">Accepteer alle cookies</button>
-    <button id="mit-accept-essential">Alleen noodzakelijk</button>
-  </div>
-</div>
 </body>
 </html>
