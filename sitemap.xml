@@ -1,18 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/algemene-voorwaarden/</loc>
-    <lastmod>2026-06-02T11:24:55.612Z</lastmod>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/</loc>
+    <lastmod>2026-06-02T11:35:53.801Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/disclaimer/</loc>
-    <lastmod>2026-06-02T11:24:44.674Z</lastmod>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/blog/mobiele-computers-en-scanners-van-newland/</loc>
+    <lastmod>2026-06-02T11:35:40.492Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/privacybeleid/</loc>
-    <lastmod>2026-06-02T11:24:35.266Z</lastmod>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/blog/samsung-galaxy-tab-a11-plus-ook-voor-accessoires-bij-masters-in-telecom/</loc>
+    <lastmod>2026-06-02T11:35:37.143Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/blog/wat-doe-je-als-er-geen-glasvezel-beschikbaar-is/</loc>
+    <lastmod>2026-06-02T11:35:31.054Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/blog/samsung-knox-wat-het-is-en-waarom-het-voor-jou-telt/</loc>
+    <lastmod>2026-06-02T11:34:23.052Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/blog/</loc>
+    <lastmod>2026-06-02T11:34:11.869Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/mobiele-scanning/</loc>
+    <lastmod>2026-06-02T11:34:01.198Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/mobiele-telefonie/</loc>
+    <lastmod>2026-06-02T11:33:51.403Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/voip/</loc>
+    <lastmod>2026-06-02T11:33:40.558Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/outdoor-data/</loc>
+    <lastmod>2026-06-02T11:33:26.998Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/esim/</loc>
+    <lastmod>2026-06-02T11:33:16.274Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/mobiele-beveiliging/</loc>
+    <lastmod>2026-06-02T11:33:06.263Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
