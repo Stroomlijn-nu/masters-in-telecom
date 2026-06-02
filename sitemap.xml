@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn-nu.github.io/masters-in-telecom/privacybeleid/</loc>
+    <lastmod>2026-06-02T11:24:35.266Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn-nu.github.io/masters-in-telecom/algemene-voorwaarden/</loc>
-    <lastmod>2026-06-02T10:58:07.230Z</lastmod>
+    <lastmod>2026-06-02T11:18:57.752Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
