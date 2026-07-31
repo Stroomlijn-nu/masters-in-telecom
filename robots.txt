@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://stroomlijn-nu.github.io/masters-in-telecom/sitemap.xml
+Sitemap: https://www.mastersintelecom.nl/sitemap.xml
