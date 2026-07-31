@@ -1,84 +1,47 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<!-- BASE:START (managed by Coding Agent — do not edit) -->
-<base href="/">
-<!-- BASE:END -->
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Google Analytics: Consent Mode v2 — laadt VOOR gtag.js -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', {
-    ad_storage:        'denied',
-    analytics_storage: 'denied',
-    ad_user_data:      'denied',
-    ad_personalization:'denied',
-    wait_for_update:   500
-  });
-</script>
-<!-- Google tag -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-STY5S3NRKH"></script>
-<script>
-  gtag('js', new Date());
-  gtag('config', 'G-STY5S3NRKH', { anonymize_ip: true });
-</script>
-<!-- Cookie consent logica -->
-<script>
-(function(){
-  var KEY='mit_cookie_consent',DAYS=365;
-  function setConsent(ok){
-    gtag('consent','update',{analytics_storage:ok?'granted':'denied'});
-    var exp=new Date(); exp.setDate(exp.getDate()+DAYS);
-    localStorage.setItem(KEY,JSON.stringify({analytics:ok,expiry:exp.toISOString()}));
-  }
-  function hide(){var b=document.getElementById('mit-cookie-banner');if(b)b.style.display='none';}
-  function show(){var b=document.getElementById('mit-cookie-banner');if(b)b.style.display='flex';}
-  var stored=localStorage.getItem(KEY);
-  if(stored){try{var d=JSON.parse(stored);if(d.expiry&&new Date(d.expiry)>new Date()){setConsent(d.analytics);document.addEventListener('DOMContentLoaded',hide);return;}}catch(e){}}
-  document.addEventListener('DOMContentLoaded',function(){
-    show();
-    document.getElementById('mit-accept-all').addEventListener('click',function(){setConsent(true);hide();});
-    document.getElementById('mit-accept-essential').addEventListener('click',function(){setConsent(false);hide();});
-  });
-})();
-</script>
-
-  <!-- Favicon --> 
-<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-<link rel="icon" type="image/png" href="/assets/2025-LOGO-DELIVERY-MIT512-marge.png" sizes="512x512">
+<link rel="icon" href="/masters-in-telecom/assets/2025-LOGO-DELIVERY-MIT512-marge.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="/blog/styles.css">
+
+
+
+<link rel="stylesheet" href="/masters-in-telecom/styles.css">
+
+
 
 <!-- SEO Meta Tags -->
-<meta name="robots" content="index, follow">
-<meta name="author" content="Masters in Telecom">
-  
-<title>Blog | Nieuws over zakelijke telecom | Masters in Telecom</title>
-<meta name="description" content="Nieuws en updates over zakelijke telefonie, mobiele beveiliging, scanning en internet. Over nieuwe toestellen, netwerken en wat dat voor je bedrijf betekent." />
+<title>Inzichten &amp;amp; Innovatie | Masters in Telecom</title>
+<meta name="description" content="Inzichten over zakelijke telecom: mobiele beveiliging, mobiele scanning, abonnementen, glasvezel en 5G. Concreet uitgelegd door Masters in Telecom." />
 <meta property="og:title" content="Inzichten &amp;amp; Innovatie | Masters in Telecom" />
-<meta property="og:description" content="Nieuws en updates over zakelijke telefonie, mobiele beveiliging, scanning en internet. Over nieuwe toestellen, netwerken en wat dat voor je bedrijf betekent." />
+<meta property="og:description" content="Inzichten over zakelijke telecom: mobiele beveiliging, mobiele scanning, abonnementen, glasvezel en 5G. Concreet uitgelegd door Masters in Telecom." />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Inzichten &amp;amp; Innovatie | Masters in Telecom" />
-<meta name="twitter:description" content="Nieuws en updates over zakelijke telefonie, mobiele beveiliging, scanning en internet. Over nieuwe toestellen, netwerken en wat dat voor je bedrijf betekent." />
-
-<link rel="canonical" href="/blog/">
-<meta property="og:url" content="/blog/">
-<meta property="og:image" content="/assets/OG-BLOG-1200x630.png">
-<meta property="og:locale" content="nl_NL">
-<meta property="og:site_name" content="Masters in Telecom">
-<meta name="twitter:image" content="/assets/OG-BLOG-1200x630.png">
-<meta name="geo.region" content="NL">
-<meta name="geo.placename" content="Nederland">
+<meta name="twitter:description" content="Inzichten over zakelijke telecom: mobiele beveiliging, mobiele scanning, abonnementen, glasvezel en 5G. Concreet uitgelegd door Masters in Telecom." />
 <!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mptuxqsc-giwe1";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  var u=new URL(location.href);var found=null;var changed=false;
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
 
 <script data-field-replace>
 (function(){
@@ -223,6 +186,7 @@
     for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
     return '';
   }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
   var __realProcessPayment=function(a,b,c,d,e){
     var amountCents,email,productName,productDescription,customerName,quantity;
     if(a&&typeof a==='object'){
@@ -234,6 +198,7 @@
     }
     if(!email)email=findEmail();
     if(!customerName)customerName=findName();
+    var phone=findPhone();
     if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
     if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
     if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
@@ -241,7 +206,7 @@
     var __pLoc=(document.documentElement.lang||navigator.language||'en');
     return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
       method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({email:email,name:customerName,amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
     }).then(function(r){return r.json();}).then(function(d){
       if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
       else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
@@ -251,6 +216,8 @@
   document.addEventListener('DOMContentLoaded',function(){
     var urlParams=new URLSearchParams(window.location.search);
     if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
       var pName=urlParams.get('product')||'your item';
       var overlay=document.createElement('div');overlay.id='payment-success-overlay';
       overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
@@ -263,28 +230,84 @@
     }
   });
 })();
+</script>
+<script data-cart>
+(function(){
+  var slug='kUbMDgcv';
+  var apiBase='https://app.stroomlijn.nu';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
 </script>  <link rel="stylesheet" href="styles.css">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "Masters in Telecom Blog",
-  "url": "https://www.mastersintelecom.nl/blog/",
-  "inLanguage": "nl-NL",
-  "publisher": { "@id": "https://www.mastersintelecom.nl/#org" }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mastersintelecom.nl/" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.mastersintelecom.nl/blog/" }
-  ]
-}
-</script>
 </head>
 <body>
 <div class="ubar" data-section="ubar"><div class="wrap-wide">
@@ -296,21 +319,21 @@
 <header class="hdr" id="hdr" data-section="navbar">
   <div class="wrap-wide">
     <div class="hdr-in">
-      <a href="mastersintelecom.nl/" class="hdr-logo"><img src="/assets/2025-LOGO-DELIVERY-MIT512X128-kopie.png" alt="Masters in Telecom"></a>
+      <a href="/masters-in-telecom/" class="hdr-logo"><img src="/masters-in-telecom/assets/2025-LOGO-DELIVERY-MIT512X128-kopie.png" alt="Masters in Telecom"></a>
       <nav class="nav">
-        <a href="mastersintelecom.nl/">Home</a>
+        <a href="/masters-in-telecom/">Home</a>
         <div class="has-sub"><span>Diensten <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></span>
           <div class="submenu">
-            <a href="/mobiele-beveiliging/">Mobiele beveiliging</a>
-            <a href="/mobiele-scanning/">Mobiele scanning</a>
-            <a href="/mobiele-telefonie/">Mobiele telefonie</a>
-            <a href="/voip/">VoIP</a>
-            <a href="/outdoor-data/">Outdoor data</a>
+            <a href="/masters-in-telecom/mobiele-beveiliging/">Mobiele beveiliging</a>
+            <a href="/masters-in-telecom/mobiele-scanning/">Mobiele scanning</a>
+            <a href="/masters-in-telecom/mobiele-telefonie/">Mobiele telefonie</a>
+            <a href="/masters-in-telecom/voip/">VoIP</a>
+            <a href="/masters-in-telecom/outdoor-data/">Outdoor data</a>
           </div>
         </div>
-        <a href="/blog/" class="active">Blog</a>
-        <a href="/#waarom">Over ons</a>
-        <a href="/#contact">Contact</a>
+        <a href="/masters-in-telecom/blog/" class="active">Blog</a>
+        <a href="/masters-in-telecom/#waarom">Over ons</a>
+        <a href="/masters-in-telecom/#contact">Contact</a>
       </nav>
       <div class="hdr-right">
         <div class="socials">
@@ -324,20 +347,20 @@
     </div>
   </div>
   <div class="mobile-panel" id="mpanel">
-    <a href="mastersintelecom.nl/">Home</a>
+    <a href="/masters-in-telecom/">Home</a>
     <div class="m-sub">
       <button id="msubbtn">Diensten <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
       <div class="m-sub-list" id="msublist">
-        <a href="/mobiele-beveiliging/">Mobiele beveiliging</a>
-        <a href="/mobiele-scanning/">Mobiele scanning</a>
-        <a href="/mobiele-telefonie/">Mobiele telefonie</a>
-        <a href="/voip/">VoIP</a>
-        <a href="/outdoor-data/">Outdoor data</a>
+        <a href="/masters-in-telecom/mobiele-beveiliging/">Mobiele beveiliging</a>
+        <a href="/masters-in-telecom/mobiele-scanning/">Mobiele scanning</a>
+        <a href="/masters-in-telecom/mobiele-telefonie/">Mobiele telefonie</a>
+        <a href="/masters-in-telecom/voip/">VoIP</a>
+        <a href="/masters-in-telecom/outdoor-data/">Outdoor data</a>
       </div>
     </div>
-    <a href="/blog/">Blog</a>
-    <a href="/#waarom">Over ons</a>
-    <a href="/#contact">Contact</a>
+    <a href="/masters-in-telecom/blog/">Blog</a>
+    <a href="/masters-in-telecom/#waarom">Over ons</a>
+    <a href="/masters-in-telecom/#contact">Contact</a>
     <div class="mobile-cta"><a class="btn btn-primary" href="mailto:dennis@mastersintelecom.nl">Advies aanvragen</a></div>
   </div>
 </header>
@@ -356,8 +379,8 @@
       <p style="color:var(--muted);font-size:17px;line-height:1.6;margin-top:10px">De nieuwste berichten over mobiele beveiliging, scanning, abonnementen en internet. Kort, duidelijk en gericht op wat het voor je werk betekent.</p>
     </div>
     <div class="blog-grid">
-        <a class="bcard" href="/blog/samsung-knox-wat-het-is-en-waarom-het-voor-jou-telt/">
-          <div class="bcard-img" style="background:var(--grad-135)"><img src="/assets/Samsung-Knox-schild.png" alt="Samsung Knox beveiligingsschild" loading="lazy" onerror="this.style.display='none'"></div>
+        <a class="bcard" href="/masters-in-telecom/blog/samsung-knox-wat-het-is-en-waarom-het-voor-jou-telt/">
+          <div class="bcard-img" style="background:var(--grad-135)"><img src="/masters-in-telecom/assets/Samsung-Knox-schild.png" alt="Samsung Knox beveiligingsschild" loading="lazy" onerror="this.style.display='none'"></div>
           <div class="bcard-body">
             <span class="cat">Mobiele beveiliging</span>
             <h3>Samsung Knox: wat het is en waarom het voor jou telt</h3>
@@ -365,8 +388,8 @@
             <div class="meta"><span><time datetime="2026-04-30">30 april 2026</time> &middot; 5 min leestijd</span><span class="more">Lees meer &rarr;</span></div>
           </div>
         </a>
-        <a class="bcard" href="/blog/wat-doe-je-als-er-geen-glasvezel-beschikbaar-is/">
-          <div class="bcard-img" style="background:var(--grad-135)"><img src="/assets/highspeed_fwa_infographic.png" alt="Buitenantenne en dual-sim router voor 5G Fixed Wireless Access" loading="lazy" onerror="this.style.display='none'"></div>
+        <a class="bcard" href="/masters-in-telecom/blog/wat-doe-je-als-er-geen-glasvezel-beschikbaar-is/">
+          <div class="bcard-img" style="background:var(--grad-135)"><img src="/masters-in-telecom/assets/highspeed-fwa-infographic.png" alt="Buitenantenne en dual-sim router voor 5G Fixed Wireless Access" loading="lazy" onerror="this.style.display='none'"></div>
           <div class="bcard-body">
             <span class="cat">Glasvezel en internet</span>
             <h3>Wat doe je als er geen glasvezel beschikbaar is?</h3>
@@ -374,8 +397,8 @@
             <div class="meta"><span><time datetime="2026-02-26">26 februari 2026</time> &middot; 5 min leestijd</span><span class="more">Lees meer &rarr;</span></div>
           </div>
         </a>
-        <a class="bcard" href="/blog/samsung-galaxy-tab-a11-plus-ook-voor-accessoires-bij-masters-in-telecom/">
-          <div class="bcard-img" style="background:var(--grad-135)"><img src="/assets/Samsung Galaxy.png" alt="Samsung Galaxy Tab A11 Plus tablet" loading="lazy" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='/assets/Mobiele telefonie.png'}else{this.style.display='none'}"></div>
+        <a class="bcard" href="/masters-in-telecom/blog/samsung-galaxy-tab-a11-plus-ook-voor-accessoires-bij-masters-in-telecom/">
+          <div class="bcard-img" style="background:var(--grad-135)"><img src="/masters-in-telecom/assets/Samsung-Galaxy.png" alt="Samsung Galaxy Tab A11 Plus tablet" loading="lazy" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='/masters-in-telecom/assets/Mobiele-telefonie.png'}else{this.style.display='none'}"></div>
           <div class="bcard-body">
             <span class="cat">Mobiele abonnementen</span>
             <h3>Samsung Galaxy Tab A11 Plus: ook voor accessoires bij Masters in Telecom</h3>
@@ -383,8 +406,8 @@
             <div class="meta"><span><time datetime="2026-02-18">18 februari 2026</time> &middot; 5 min leestijd</span><span class="more">Lees meer &rarr;</span></div>
           </div>
         </a>
-        <a class="bcard" href="/blog/mobiele-computers-en-scanners-van-newland/">
-          <div class="bcard-img" style="background:var(--grad-135)"><img src="/assets/MT93-Newland-Masters-of_Telecom.jpg" alt="Newland mobiele computer en handscanner" loading="lazy" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='/assets/Mobiele scanning z:w met filter.png'}else{this.style.display='none'}"></div>
+        <a class="bcard" href="/masters-in-telecom/blog/mobiele-computers-en-scanners-van-newland/">
+          <div class="bcard-img" style="background:var(--grad-135)"><img src="/masters-in-telecom/assets/MT93-Newland-Masters-of_Telecom.png" alt="Newland mobiele computer en handscanner" loading="lazy" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='/masters-in-telecom/assets/Mobiele-scanning-zw-met-filter.png'}else{this.style.display='none'}"></div>
           <div class="bcard-body">
             <span class="cat">Mobiele scanning</span>
             <h3>Mobiele computers en scanners van Newland</h3>
@@ -398,25 +421,26 @@
 <footer class="foot" data-section="footer"><div class="wrap-wide">
   <div class="foot-grid">
     <div>
-      <img src="/assets/2025-LOGO-DELIVERY-MIT512-marge.png" alt="Masters in Telecom">
+      <img src="/masters-in-telecom/assets/2025-LOGO-DELIVERY-MIT512-marge.png" alt="Masters in Telecom">
       <p class="mission">Je onafhankelijke partner in veilige en betrouwbare zakelijke telecommunicatie.</p>
     </div>
     <div>
       <h3>Navigatie</h3>
       <ul>
-        <li><a href="mastersintelecom.nl"><span class="b"></span>Home</a></li>
-        <li><a href="/#diensten"><span class="b"></span>Diensten</a></li>
-        <li><a href="/blog/"><span class="b"></span>Blog</a></li>
-        <li><a href="/#waarom"><span class="b"></span>Over ons</a></li>
-        <li><a href="/#contact"><span class="b"></span>Contact</a></li>
+        <li><a href="/masters-in-telecom/"><span class="b"></span>Home</a></li>
+        <li><a href="/masters-in-telecom/#diensten"><span class="b"></span>Diensten</a></li>
+        <li><a href="/masters-in-telecom/blog/"><span class="b"></span>Blog</a></li>
+        <li><a href="/masters-in-telecom/#waarom"><span class="b"></span>Over ons</a></li>
+        <li><a href="/masters-in-telecom/#contact"><span class="b"></span>Contact</a></li>
       </ul>
     </div>
     <div>
       <h3>De kleine lettertjes</h3>
       <ul>
-        <li><a href="/algemene-voorwaarden"><span class="b"></span>Algemene voorwaarden</a></li>
-        <li><a href="/privacybeleid"><span class="b"></span>Privacy Policy</a></li>
-        <li><a href="/disclaimer"><span class="b"></span>Cookiebeleid</a></li>
+        <li><a href="../algemene-voorwaarden/"><span class="b"></span>Algemene voorwaarden</a></li>
+        <li><a href="../privacybeleid/"><span class="b"></span>Privacybeleid</a></li>
+        <li><a href="../privacybeleid/"><span class="b"></span>privacybeleid</a></li>
+        <li><a href="../disclaimer/"><span class="b"></span>Disclaimer</a></li>
         <li><a href="#"><span class="b"></span>Ma t/m vr, 09:00 tot 17:00</a></li>
       </ul>
     </div>
@@ -432,25 +456,6 @@
   <hr>
   <p class="copy">&copy; 2026 Masters in Telecom. Samen zetten we de lijnen uit.</p>
 </div></footer>
-<script src="/blog/script.js"></script>
-
-  <style>
-#mit-cookie-banner{display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#3B0256;color:#fff;font-family:'Poppins',sans-serif;font-size:14px;padding:16px 24px;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;box-shadow:0 -4px 24px rgba(0,0,0,.3)}
-#mit-cookie-banner p{flex:1;min-width:260px;line-height:1.6;color:rgba(255,255,255,.9);margin:0}
-#mit-cookie-banner a{color:#D60B52;text-decoration:underline}
-.mit-cookie-btns{display:flex;gap:12px;flex-shrink:0;flex-wrap:wrap}
-#mit-accept-all{background:#D60B52;color:#fff;border:none;padding:10px 20px;border-radius:5px;font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;cursor:pointer;transition:opacity .2s}
-#mit-accept-all:hover{opacity:.88}
-#mit-accept-essential{background:transparent;color:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.35);padding:10px 20px;border-radius:5px;font-family:'Poppins',sans-serif;font-size:14px;font-weight:500;cursor:pointer;transition:background .2s}
-#mit-accept-essential:hover{background:rgba(255,255,255,.1)}
-@media(max-width:600px){#mit-cookie-banner{flex-direction:column;align-items:flex-start}.mit-cookie-btns{width:100%}#mit-accept-all,#mit-accept-essential{flex:1;text-align:center}}
-</style>
-<div id="mit-cookie-banner" role="dialog" aria-label="Cookiemelding">
-  <p>Wij gebruiken cookies om te meten hoe bezoekers onze website gebruiken. Zie ons <a href="/algemene-voorwaarden" target="_blank">cookiebeleid</a>.</p>
-  <div class="mit-cookie-btns">
-    <button id="mit-accept-all">Accepteer alle cookies</button>
-    <button id="mit-accept-essential">Alleen noodzakelijk</button>
-  </div>
-</div>
+<script src="/masters-in-telecom/script.js"></script>
 </body>
 </html>
