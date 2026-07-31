@@ -26,6 +26,7 @@
 <meta name="twitter:title" content="Inzichten &amp;amp; Innovatie | Masters in Telecom" />
 <meta name="twitter:description" content="Inzichten over zakelijke telecom: mobiele beveiliging, mobiele scanning, abonnementen, glasvezel en 5G. Concreet uitgelegd door Masters in Telecom." />
 <!-- End SEO Meta Tags -->
+<meta name="sheet-data-url" content="https://app.stroomlijn.nu/api/public/landing-pages/4458/sheet-data">
 <script data-lp-token-hydrate>
 (function(){try{
   var slug="lp-mptuxqsc-giwe1";
@@ -378,53 +379,8 @@
       <h2 class="title">Laatste inzichten</h2>
       <p style="color:var(--muted);font-size:17px;line-height:1.6;margin-top:10px">De nieuwste berichten over mobiele beveiliging, scanning, abonnementen en internet. Kort, duidelijk en gericht op wat het voor je werk betekent.</p>
     </div>
-    <div class="blog-grid">
-        <a class="bcard" href="/blog/zakelijk-toestel-kwijt-of-gestolen/">
-          <div class="bcard-img" style="background:var(--grad-135)"><img src="https://app.stroomlijn.nu/objects/generated-images/82/1785485886576-b3bb41291bf5f1f0.png" alt="Zakelijk toestel kwijt of gestolen" loading="lazy" onerror="this.style.display='none'"></div>
-          <div class="bcard-body">
-            <span class="cat">Mobiele beveiliging</span>
-            <h3>Zakelijk toestel kwijt of gestolen: dit doe je in de eerste 24 uur</h3>
-            <p>Een verloren of gestolen zakelijk toestel is meer dan een vervelende kostenpost. Met deze stappen beperk je de schade en houd je bedrijfsgegevens veilig.</p>
-            <div class="meta"><span><time datetime="2026-07-31">31 juli 2026</time> &middot; 4 min leestijd</span><span class="more">Lees meer &rarr;</span></div>
-          </div>
-        </a>
-        <a class="bcard" href="/blog/samsung-knox-wat-het-is-en-waarom-het-voor-jou-telt/">
-          <div class="bcard-img" style="background:var(--grad-135)"><img src="/assets/Samsung-Knox-schild.png" alt="Samsung Knox beveiligingsschild" loading="lazy" onerror="this.style.display='none'"></div>
-          <div class="bcard-body">
-            <span class="cat">Mobiele beveiliging</span>
-            <h3>Samsung Knox: wat het is en waarom het voor jou telt</h3>
-            <p>Mobiele toestellen staan steeds vaker in het hart van de bedrijfsvoering. Dan wil je weten dat ze goed beveiligd zijn. Samsung Knox regelt dat, van binnenuit.</p>
-            <div class="meta"><span><time datetime="2026-04-30">30 april 2026</time> &middot; 5 min leestijd</span><span class="more">Lees meer &rarr;</span></div>
-          </div>
-        </a>
-        <a class="bcard" href="/blog/wat-doe-je-als-er-geen-glasvezel-beschikbaar-is/">
-          <div class="bcard-img" style="background:var(--grad-135)"><img src="/assets/highspeed-fwa-infographic.png" alt="Buitenantenne en dual-sim router voor 5G Fixed Wireless Access" loading="lazy" onerror="this.style.display='none'"></div>
-          <div class="bcard-body">
-            <span class="cat">Glasvezel en internet</span>
-            <h3>Wat doe je als er geen glasvezel beschikbaar is?</h3>
-            <p>Je hebt net een nieuw bedrijfspand betrokken. Alles staat klaar. Alleen: er ligt geen glasvezelkabel. Die situatie zien we vaker dan je denkt.</p>
-            <div class="meta"><span><time datetime="2026-02-26">26 februari 2026</time> &middot; 5 min leestijd</span><span class="more">Lees meer &rarr;</span></div>
-          </div>
-        </a>
-        <a class="bcard" href="/blog/samsung-galaxy-tab-a11-plus-ook-voor-accessoires-bij-masters-in-telecom/">
-          <div class="bcard-img" style="background:var(--grad-135)"><img src="/assets/Samsung-Galaxy.png" alt="Samsung Galaxy Tab A11 Plus tablet" loading="lazy" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='/assets/Mobiele-telefonie.png'}else{this.style.display='none'}"></div>
-          <div class="bcard-body">
-            <span class="cat">Mobiele abonnementen</span>
-            <h3>Samsung Galaxy Tab A11 Plus: ook voor accessoires bij Masters in Telecom</h3>
-            <p>Een nieuwe tablet kopen is één ding. Zorgen dat je hem goed kunt gebruiken voor je werk is een tweede.</p>
-            <div class="meta"><span><time datetime="2026-02-18">18 februari 2026</time> &middot; 5 min leestijd</span><span class="more">Lees meer &rarr;</span></div>
-          </div>
-        </a>
-        <a class="bcard" href="/blog/mobiele-computers-en-scanners-van-newland/">
-          <div class="bcard-img" style="background:var(--grad-135)"><img src="/assets/MT93-Newland-Masters-of_Telecom.png" alt="Newland mobiele computer en handscanner" loading="lazy" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='/assets/Mobiele-scanning-zw-met-filter.png'}else{this.style.display='none'}"></div>
-          <div class="bcard-body">
-            <span class="cat">Mobiele scanning</span>
-            <h3>Mobiele computers en scanners van Newland</h3>
-            <p>In de logistiek, retail, zorg en industrie draait veel om snel en foutloos scannen. Mobiele computers en handscanners zijn daar niet meer weg te denken.</p>
-            <div class="meta"><span><time datetime="2025-11-04">4 november 2025</time> &middot; 2 min leestijd</span><span class="more">Lees meer &rarr;</span></div>
-          </div>
-        </a>
-    </div>
+    <div class="blog-grid" id="bloggrid"></div>
+    <div class="blog-fallback" id="blogfallback" style="display:none">De artikelen kunnen op dit moment niet geladen worden. Probeer het later opnieuw of neem contact op via dennis@mastersintelecom.nl.</div>
   </div>
 </section>
 <footer class="foot" data-section="footer"><div class="wrap-wide">
@@ -465,5 +421,7 @@
   <p class="copy">&copy; 2026 Masters in Telecom. Samen zetten we de lijnen uit.</p>
 </div></footer>
 <script src="/script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
