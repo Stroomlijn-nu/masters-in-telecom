@@ -1,68 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.mastersintelecom.nl/blog/samsung-knox-wat-het-is-en-waarom-het-voor-jou-telt/</loc>
-    <lastmod>2026-07-31T10:50:15.239Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.mastersintelecom.nl/blog/</loc>
-    <lastmod>2026-07-31T10:38:46.447Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.mastersintelecom.nl/blog/zakelijk-toestel-kwijt-of-gestolen/</loc>
-    <lastmod>2026-07-31T08:19:32.842Z</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.mastersintelecom.nl/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.mastersintelecom.nl/mobiele-beveiliging/</loc>
-    <lastmod>2026-06-02T14:18:11.565Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.mastersintelecom.nl/blog/mobiele-computers-en-scanners-van-newland/</loc>
-    <lastmod>2026-06-02T11:37:15.459Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.mastersintelecom.nl/blog/samsung-galaxy-tab-a11-plus-ook-voor-accessoires-bij-masters-in-telecom/</loc>
-    <lastmod>2026-06-02T11:37:08.336Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.mastersintelecom.nl/blog/wat-doe-je-als-er-geen-glasvezel-beschikbaar-is/</loc>
-    <lastmod>2026-06-02T11:37:01.176Z</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.mastersintelecom.nl/mobiele-scanning/</loc>
-    <lastmod>2026-06-02T11:36:39.580Z</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.mastersintelecom.nl/mobiele-telefonie/</loc>
-    <lastmod>2026-06-02T11:36:32.510Z</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.mastersintelecom.nl/voip/</loc>
-    <lastmod>2026-06-02T11:36:24.691Z</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.mastersintelecom.nl/outdoor-data/</loc>
-    <lastmod>2026-06-02T11:36:16.559Z</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.mastersintelecom.nl/esim/</loc>
-    <lastmod>2026-06-02T11:36:08.925Z</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.mastersintelecom.nl/</loc>
-    <lastmod>2026-06-02T11:35:53.801Z</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.mastersintelecom.nl/blog/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mastersintelecom.nl/blog/esim-kaart-buiten-europa-voorkom-hoge-roamingkosten/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mastersintelecom.nl/blog/esim-op-vakantie-voorkom-verrassingen-op-je-telefoonrekening/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mastersintelecom.nl/blog/zakelijk-toestel-kwijt-of-gestolen/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mastersintelecom.nl/blog/masters-in-telecom-behaalt-samsung-knox-associate-certificaa/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mastersintelecom.nl/blog/samsung-knox-wat-het-is-en-waarom-het-voor-jou-telt/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mastersintelecom.nl/blog/wat-doe-je-als-er-geen-glasvezel-beschikbaar-is/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mastersintelecom.nl/blog/samsung-galaxy-tab-a11-plus-ook-voor-accessoires-bij-masters-in-telecom/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mastersintelecom.nl/blog/mobiele-computers-en-scanners-van-newland/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mastersintelecom.nl/algemene-voorwaarden/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.mastersintelecom.nl/privacybeleid/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.mastersintelecom.nl/disclaimer/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.2</priority>
   </url>
 </urlset>

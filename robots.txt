@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /checkout/
+Disallow: /payment/
+Disallow: /cookie-en-analytics-snippet.html
+Disallow: /download-images.sh
+Disallow: /image-manifest.txt
+Disallow: /blog/INTEGRATIE.md
 
 Sitemap: https://www.mastersintelecom.nl/sitemap.xml
